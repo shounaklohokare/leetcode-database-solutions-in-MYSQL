@@ -1,0 +1,5 @@
+SELECT customer_number
+FROM ORDERS
+GROUP BY customer_number
+ORDER BY COUNT(ORDER_NUMBER) DESC
+LIMIT 1;
